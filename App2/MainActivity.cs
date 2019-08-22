@@ -10,7 +10,9 @@ namespace App2
     public class MainActivity : AppCompatActivity
     {
         TextView txtNumber;
-
+        EditText txtOperand1;
+        EditText txtOperand2;
+        TextView txtSum;
         int number;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -26,6 +28,13 @@ namespace App2
 
             FindViewById<Button>(Resource.Id.btnDecrement).Click += (o, e) =>
             txtNumber.Text = (--number).ToString();
+
+            txtSum = FindViewById<TextView>(Resource.Id.txtSum);
+            txtOperand1 = FindViewById<EditText>(Resource.Id.operand1);
+            txtOperand2 = FindViewById<EditText>(Resource.Id.operand2);
+
+            FindViewById<Button>(Resource.Id.btnAdd).Click += (o, e) =>
+            txtSum.Text = (int.Parse(txtOperand1.Text) - int.Parse(txtOperand2.Text)).ToString();
         }
     }
 }

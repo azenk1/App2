@@ -7,9 +7,9 @@
 	<TextView
 		android:text="0"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
+		android:layout_height="27.5dp"
 		android:id="@+id/txtNumber"
-		android:layout_marginBottom="20dp"
+		android:layout_marginBottom="6.5dp"
 		android:layout_marginTop="20dp"
 		android:textSize='50sp'
 		android:gravity="center"	/>
@@ -22,15 +22,31 @@
 		android:text="Decrement"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/btnDecrement" />
+		android:id="@+id/btnDecrement"
+		android:layout_marginBottom="0.0dp" />
+	<TextView
+		android:text="0"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/txtSum"
+		android:layout_marginBottom="20dp"
+		android:layout_marginTop="20dp"
+		android:textSize="50sp"
+		android:gravity="center"/>
+	
 	<EditText
 		android:inputType="numberSigned"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/editText1" />
+		android:id="@+id/operand1" />
 	<EditText
 		android:inputType="numberSigned"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/editText2" />
+		android:id="@+id/operand2" />
+	<Button
+		android:text="Add"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnAdd" />
 	</LinearLayout>
